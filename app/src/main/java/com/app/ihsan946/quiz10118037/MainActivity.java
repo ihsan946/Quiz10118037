@@ -1,5 +1,10 @@
 package com.app.ihsan946.quiz10118037;
 
+// Nama : Muhammad Ihsan
+// NIM : 10118037
+// KELAS : IF-1 2018
+// Tanggal Pembuatan : 29 Mei 2021
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
