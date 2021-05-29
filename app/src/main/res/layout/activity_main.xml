@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen16"
+                android:layout_marginLeft="@dimen/dimen16"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="@dimen/dimen16"
+                android:layout_marginRight="@dimen/dimen16"
+                android:background="@drawable/border_frame1">
+
+                <ImageView
+                    android:id="@+id/logo_1"
+                    android:layout_width="@dimen/dimen48"
+                    android:layout_height="@dimen/dimen48"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="24dp"
+                    android:src="@drawable/logo_1"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text1_frame1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen16"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toEndOf="@id/logo_1"
+                    android:layout_toRightOf="@id/logo_1"
+                    android:fontFamily="@font/roboto"
+                    android:text="DigiTeam"
+                    android:textColor="@color/gray_900"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2_frame1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1_frame1"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toEndOf="@id/logo_1"
+                    android:layout_toRightOf="@id/logo_1"
+                    android:text="Digital Together Everyone Achieve More"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/text3_frame1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text2_frame1"
+                    android:layout_marginBottom="17dp"
+                    android:layout_toEndOf="@id/logo_1"
+                    android:layout_toRightOf="@id/logo_1"
+                    android:text="Jabar Digital Service"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <ImageView
+                    android:id="@+id/gambar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen16"
+                    android:layout_marginLeft="@dimen/dimen16"
+                    android:src="@drawable/ellipse_1" />
+
+                <TextView
+                    android:id="@+id/text1_frame2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen8"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@id/gambar1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Dias Eka Fredianto, S.Kom, B.IT"
+                    android:textColor="@color/gray_900"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2_frame2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1_frame2"
+                    android:layout_marginLeft="@dimen/dimen8"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/gambar1"
+                    android:fontFamily="@font/roboto"
+                    android:text="UI Designer"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen16"
+                android:layout_marginTop="@dimen/dimen28"
+                android:layout_marginRight="@dimen/dimen16"
+                android:background="@drawable/border_frame3"
+                android:paddingLeft="@dimen/dimen16"
+                android:paddingTop="@dimen/dimen16">
+
+                <TextView
+                    android:id="@+id/text1_frame3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Jam Kerja Bulan Ini"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2_frame3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1_frame3"
+                    android:layout_marginTop="@dimen/dimen16"
+                    android:text="Jam kerja kamu bulan ini: 130.53 Jam"
+                    android:textColor="@color/blue_900"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/progress_bar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@id/text2_frame3"
+                    android:layout_marginRight="@dimen/dimen16"
+                    android:background="@drawable/border_progressbar1"
+                    />
+
+
+                <View
+                    android:id="@+id/progress_bar2"
+                    android:layout_width="250dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@id/text2_frame3"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/border_progressbar2" />
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/clock"
+                    android:layout_below="@id/text2_frame3"
+                    android:layout_toRightOf="@id/progress_bar2"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="@dimen/dimen8"
+                    android:layout_marginBottom="@dimen/dimen8"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
